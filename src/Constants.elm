@@ -111,20 +111,6 @@ jobs =
             I also led the development of a WPF application, where I created a library to easily manage data stored in recursive CTEs.
             """
         )
-    , Job (always "Coatí Labs")
-        (SimpleDate Time.Jan 2021)
-        (Just <| SimpleDate Time.Apr 2021)
-        (Language.translated "Desarrollador Web Frontend" "Frontend Web Developer")
-        (Language.translated
-            """
-            En Coatí se desarrollan aplicaciones web a la medida, como sistemas de CRM y comercios electrónicos.
-            Estuve involucrado en varios proyectos donde mis contribuciones incluían programar en React y participar en tomas de decisiones arquitectónicas.
-            """
-            """
-            Coatí Labs develops custom web applications, like CRM systems and e-commerces.
-            I was involved in several projects where my main contributions included programming in React and take part in architectural decision making.
-            """
-        )
     , Job (always "Sumerian")
         (SimpleDate Time.Jun 2020)
         (Just <| SimpleDate Time.Jul 2021)
@@ -143,6 +129,20 @@ jobs =
             My tasks included programming in Vue and React, taking part in meetings with clients aimed at understanding their requirements and proposing solutions,
             define a programming standard and participate in the research and decision-making around our tech stack.
             Here I learned the most about software engineering, project management and how to have agreements with clients.
+            """
+        )
+    , Job (always "Coatí Labs")
+        (SimpleDate Time.Jan 2021)
+        (Just <| SimpleDate Time.Apr 2021)
+        (Language.translated "Desarrollador Web Frontend" "Frontend Web Developer")
+        (Language.translated
+            """
+            En Coatí se desarrollan aplicaciones web a la medida, como sistemas de CRM y comercios electrónicos.
+            Estuve involucrado en varios proyectos donde mis contribuciones incluían programar en React y participar en tomas de decisiones arquitectónicas.
+            """
+            """
+            Coatí Labs develops custom web applications, like CRM systems and e-commerces.
+            I was involved in several projects where my main contributions included programming in React and take part in architectural decision making.
             """
         )
     , Job (always "SoldAI")
