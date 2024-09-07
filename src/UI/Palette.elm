@@ -1,6 +1,5 @@
 module UI.Palette exposing
-    ( Palette
-    , Theme(..)
+    ( Theme(..)
     , almostBlack
     , changeOpacity
     , grey
