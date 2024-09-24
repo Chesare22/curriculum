@@ -325,9 +325,6 @@ view model =
                         """
                     , property "row-gap" "1rem"
                     ]
-                , UI.Media.belowBigScreen
-                    [ paddingBottom (px 0)
-                    ]
                 ]
             ]
             [ styled div
@@ -383,16 +380,16 @@ view model =
                     , [ styled div
                             [ UI.Style.twoColumnContainer ]
                             []
-                            [ styled div
-                                [ property "display" "grid"
-                                , property "align-content" "start"
-                                ]
-                                []
-                                (List.concat
-                                    [ [ educationSubtitle model.theme model.language ]
-                                    , Constants.education |> List.map (displayStudy model.language)
+                            [ div []
+                                [ educationSubtitle model.theme model.language
+                                , styled div
+                                    [ property "display" "grid"
+                                    , property "align-content" "start"
+                                    , property "grid-gap" "1.5rem"
                                     ]
-                                )
+                                    []
+                                    (Constants.education |> List.map (displayStudy model.language))
+                                ]
                             , styled div
                                 [ property "display" "grid"
                                 , property "align-content" "start"
@@ -599,7 +596,6 @@ displayStudy lang study =
         [ Attributes.css
             [ property "display" "grid"
             , property "grid-template-columns" "1fr"
-            , marginBottom (rem 0.5)
             , property "row-gap" "0.2rem"
             ]
         ]
@@ -610,7 +606,7 @@ displayStudy lang study =
             [ Attributes.css [ fontStyle italic ] ]
             [ text (Formatters.formatDateRange lang study.start (Just study.end)) ]
         , p
-            [ Attributes.css [ UI.Style.paragraph ] ]
+            [ Attributes.css [ UI.Style.paragraph, margin (px 0) ] ]
             [ text study.institution ]
         ]
 

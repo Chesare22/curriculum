@@ -148,7 +148,7 @@ twoColumnContainer =
         [ property "display" "grid"
         , property "grid-template-columns" "1fr 1fr"
         , property "column-gap" "1rem"
-        , property "row-gap" "0.85rem"
+        , property "row-gap" "2.4rem"
         , property "align-content" "start"
         , UI.Media.onSmallScreen
             [ property "grid-template-columns" "1fr"
